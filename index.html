@@ -12,10 +12,17 @@
     <title>Meet landing page</title>
   </head>
   <body class="bg-white">
-    <header class="px-8 relative flex flex-col items-center">
+    <header class="px-8 flex flex-col items-center overflow-hidden">
       <img class="mx-auto mt-12 mb-16" src="/public/logo.svg" alt="meet logo" />
-      <div class="w-screen min-w-full mb-12">
-        <img src="/public/assets/tablet/image-hero.png" />
+      <div class="flex w-full justify-center relative">
+        <img
+          class="mb-12 max-w-[110vw] absolute"
+          src="/public/assets/tablet/image-hero.png"
+        />
+        <img
+          class="mb-12 max-w-[100vw] invisible"
+          src="/public/assets/tablet/image-hero.png"
+        />
       </div>
       <div class="text-center">
         <h1 class="text-[2.5rem] font-extrabold text-slate-900 mb-6">
@@ -37,31 +44,31 @@
         </button>
       </div>
     </header>
-    <main class="px-8">
-      <div></div>
+    <main class="px-8 flex flex-col items-center">
+      <div class="bg-amber-50 rounded-full">1</div>
       <div class="grid grid-cols-2 grid-rows-2 gap-2">
         <img
           class="rounded-md"
           src="/public/assets/desktop/image-woman-in-videocall.jpg"
-          alt=""
+          alt="women in video call"
         />
 
         <img
           class="rounded-md"
           src="/public/assets/desktop/image-women-videochatting.jpg"
-          alt=""
+          alt="women video chatting"
         />
 
         <img
           class="rounded-md"
           src="/public/assets/desktop/image-men-in-meeting.jpg"
-          alt=""
+          alt="men in meeting"
         />
 
         <img
           class="rounded-md"
           src="/public/assets/desktop/image-man-texting.jpg"
-          alt=""
+          alt="man texting"
         />
       </div>
     </main>
